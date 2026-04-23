@@ -50,6 +50,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+test_results.txt
 
 # Translations
 *.mo
@@ -205,3 +206,14 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Agent / IDE specific
+.agents/
+.claude/
+.vscode/
+
+# Synthetic data generator output
+synth_out/
+
+# Synthetic data generator output
+synth_out/

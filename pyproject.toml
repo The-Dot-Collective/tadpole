@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "person-matching-synth"
+version = "0.1.0"
+description = "Synthetic data generator for person-matching algorithm validation"
+requires-python = ">=3.11"
+dependencies = [
+    "faker>=24.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.scripts]
+person-matching-synth = "person_matching_synth.generate:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["person_matching_synth*"]
